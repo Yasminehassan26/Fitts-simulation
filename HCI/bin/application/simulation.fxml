@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="357.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.game">
+   <children>
+      <AnchorPane fx:id="base" layoutX="36.0" layoutY="49.0" prefHeight="250.0" prefWidth="308.0" style="-fx-border-color: blue; -fx-background-color: white;">
+         <children>
+            <Circle fx:id="circle2" fill="#490eeb" layoutX="49.0" layoutY="125.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+              <Circle fx:id="circle1" fill="#ed0c33" layoutX="260.0" layoutY="125.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+        
+         </children>
+      </AnchorPane>
+      <Button layoutX="266.0" layoutY="320.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
+      <Button layoutX="67.0" layoutY="320.0" mnemonicParsing="false" onAction="#begin" text="Begin" />
+      <ListView fx:id="list1" layoutX="425.0" layoutY="59.0" prefHeight="274.0" prefWidth="143.0" style="-fx-border-color: black;" />
+      <Label layoutX="436.0" layoutY="41.0" prefHeight="17.0" prefWidth="323.0" text=" distance                            width                 time milliseconds" />
+      <ListView fx:id="list2" layoutX="570.0" layoutY="59.0" prefHeight="274.0" prefWidth="76.0" style="-fx-border-color: black;" />
+      <Label layoutX="127.0" layoutY="6.0" prefHeight="17.0" prefWidth="113.0" text="Click on the CIRCLE !" />
+      <Label layoutX="322.0" layoutY="23.0" prefHeight="17.0" prefWidth="113.0" text="blue :the end point" />
+      <Label layoutX="322.0" layoutY="8.0" prefHeight="17.0" prefWidth="113.0" text="Red :the start point" />
+      <ListView fx:id="list3" layoutX="652.0" layoutY="59.0" prefHeight="274.0" prefWidth="97.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>
